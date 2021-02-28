@@ -13,19 +13,9 @@ namespace L7_Q4
         }
 
         public static int MMC (int x, int y) {
-            int resto = 0;
+            int i = 0;
             
-            int x1 = x;
-            int y1 = y;
-
-            while (resto != 0) {
-                resto = x1 % y1;
-                x1 = y1;
-                y1 = resto;
-            }
-
-            int mmc = (x1 * y1) / resto;
-            return mmc;
+            if (x % 2 == 0)
         }
     }
 }
