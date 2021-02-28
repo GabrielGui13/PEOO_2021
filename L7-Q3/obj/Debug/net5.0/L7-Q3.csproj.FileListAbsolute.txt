@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\L7-Q3.exe
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\L7-Q3.deps.json
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\L7-Q3.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\L7-Q3.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\L7-Q3.dll
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\ref\L7-Q3.dll
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\bin\Debug\net5.0\L7-Q3.pdb
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.dll
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\ref\L7-Q3.dll
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.pdb
+C:\Users\gabri\Documents\github\PEOO\L7-Q3\obj\Debug\net5.0\L7-Q3.genruntimeconfig.cache
