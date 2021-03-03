@@ -1,0 +1,5 @@
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.csproj.CoreCompileInputs.cache
