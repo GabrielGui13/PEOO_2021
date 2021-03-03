@@ -1,5 +1,6 @@
 const musicas = []
 const nomeMusicas = []
+
 function inserirMusicaArray () {
 
     var aux = 0
@@ -13,13 +14,22 @@ function inserirMusicaArray () {
 
         return musicas
     }
-    
+
     this.getResultadoNomes = () => {
+        let retorno = `As musicas inseridas na playlist sao: `
+
         for (cadaMusica in musicas) {
            if (cadaMusica !== null) nomeMusicas.push(musicas[cadaMusica].nome)
         }
 
-        for (let y = 0; y < aux; y++) console.log(nomeMusicas[y])
+        for (let y = 0; y < aux; y++) {
+            if (y < aux && y != 0) retorno += ", "
+            if (y == aux - 1) retorno += "e "
+            retorno += (`${nomeMusicas[y]}`)
+        }
+        
+        retorno += "."
+        return retorno
     }
 
     this.getDuracaoTotal = () => {
@@ -48,7 +58,8 @@ let m2 = getMusica.setInfo('XO', 'John Mayer', '03:33')
 let m3 = getMusica.setInfo('Small Bump', 'Ed Sheeran', '04:19')
 let m4 = getMusica.setInfo('State Lines', 'Novo Amor', '03:28')
 let m5 = getMusica.setInfo('Tenerife Sea', 'Ed Sheeran', '04:01')
-let m6 = getMusica.setInfo('Selva Branca', 'Chiclete com Banana', '05:02')
+let m6 = getMusica.setInfo("Feel Good Inc", "Gorillaz", "03:42")
 
-getMusica.getResultadoNomes()
+console.log(getMusica.getResultadoNomes())
+console.log()
 console.log(getMusica.getDuracaoTotal())

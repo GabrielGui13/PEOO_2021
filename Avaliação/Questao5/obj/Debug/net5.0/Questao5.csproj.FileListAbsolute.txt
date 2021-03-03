@@ -3,3 +3,14 @@ C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\
 C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.AssemblyInfoInputs.cache
 C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.AssemblyInfo.cs
 C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\Questao5.exe
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\Questao5.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\Questao5.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\Questao5.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\Questao5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\ref\Questao5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\bin\Debug\net5.0\Questao5.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\ref\Questao5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação\Questao5\obj\Debug\net5.0\Questao5.genruntimeconfig.cache

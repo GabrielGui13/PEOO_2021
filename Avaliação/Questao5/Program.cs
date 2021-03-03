@@ -1,13 +1,12 @@
 ﻿using System;
-
 public class Musica {
   public string nome;
   public string artista;
   public string duracao;
-  public Musica(string entnome, string entartista, string entduracao) {
-    nome = entnome;
-    artista = entartista;
-    duracao = entduracao;
+  public Musica(string xnome, string xartista, string xduracao) {
+    nome = xnome;
+    artista = xartista;
+    duracao = xduracao;
   }
   public void SetNome(string nome) {
     this.nome = nome;
@@ -30,38 +29,56 @@ public class Musica {
 }
 
 public class Playlist {
-  Musica[] vetormusicas = new Musica[19];
+  Musica[] musicas = new Musica[19];
   private int aux = 0;
   public void InserirMusica(Musica m) {
-    vetormusicas[aux] = m;
+    musicas[aux] = m;
     aux++;
   }
-  public override string ToString() {
-    return $"{{{vetormusicas[0].GetNome()}, {vetormusicas[1].GetNome()}}}";
-  }
+  
   public string GetDuracaoTotal() {
-    int minutos = 0;
-    int segundos = 0;
+    int min = 0;
+    int seg = 0;
+
     for(int i = 0; i < aux; i++) {
-      minutos += int.Parse((vetormusicas[i].GetDuracao()).Substring(0,2));
-      segundos += int.Parse((vetormusicas[i].GetDuracao()).Substring(3,2));  
+      min += int.Parse((musicas[i].GetDuracao()).Substring(0,2));
+      seg += int.Parse((musicas[i].GetDuracao()).Substring(3,2));  
     }
-    int horas = minutos/60;
-    minutos %= 60;
-    minutos += segundos / 60;
-    segundos %=  60;
-    return $"A duração total das músicas da playlist é de {horas} horas, {minutos} minutos e {segundos} segundos";
+    int hr = min/60;
+    min %= 60;
+    min += seg / 60;
+    seg %=  60;
+    return $"A playlist tem um total de {hr} horas, {min} minutos e {seg} segundos acumulados em musicas.";
   } 
+
+  public string retornarMusicas(){
+    int total = aux;
+    string getBack = "As musicas inseridas na playlist sao: " ;
+    for(int y = 0; y < total; y++){
+      if (y < total && y != 0) getBack += ", ";
+      if (y == total - 1) getBack += "e ";
+      getBack += ($"{musicas[y].GetNome()}");
+    }
+    getBack += ".";
+    return getBack;
+  }
 }
 
 public class MainClass {
   public static void Main() {
-    Playlist um = new Playlist();
-    Musica m1 = new Musica("If i Fell", "The Beatles", "02:19");
-    um.InserirMusica(m1);
-    Musica m2 = new Musica("Papagaio Reginaldo", "Palavra Cantada", "06:29");
-    um.InserirMusica(m2);
-    Console.WriteLine(um.GetDuracaoTotal());
-    Console.WriteLine(um.ToString());
+    Playlist getPlaylist = new Playlist();
+    Musica music1 = new Musica("Next to Me", "Imagine Dragons", "03:50");
+    getPlaylist.InserirMusica(music1);
+    Musica music2 = new Musica("XO", "John Mayer", "03:33");
+    getPlaylist.InserirMusica(music2);
+    Musica music3 = new Musica("One", "Ed Sheeran", "04:12");
+    getPlaylist.InserirMusica(music3);
+    Musica music4 = new Musica("Hear me", "Imagine Dragons", "03:55");
+    getPlaylist.InserirMusica(music4);
+    Musica music5 = new Musica("Feel Good Inc", "Gorillaz", "03:42");
+    getPlaylist.InserirMusica(music5);
+
+    Console.WriteLine(getPlaylist.GetDuracaoTotal());
+    Console.WriteLine(getPlaylist.retornarMusicas());
   }
 }
