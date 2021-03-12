@@ -109,20 +109,19 @@ class MainClass {
         Console.WriteLine("8 - Extrato");
         Console.WriteLine("0 - Sair");
     }
+    public static System.Collections.Generic.List<string> extrato = new System.Collections.Generic.List<string>();
     public static void redirecionar(int retorno) {
-        int index = 1;
-        System.Collections.Generic.List<string> extrato = new System.Collections.Generic.List<string>();
+        
         if (retorno == 1) {
             abrirConta();
             Console.WriteLine("Sua conta agora esta aberta!");
-            extrato.Add($"{index} = Abertura de conta");
-            index++;
+            extrato.Add("* Abertura de conta");
         }
         if (retorno == 2) {
             fecharConta();
             Console.WriteLine("Sua conta agora esta fechada!");
-            extrato.Add($"{index + 1} = Fechamento de conta");
-            index++;
+            extrato.Add("* Fechamento de conta");
+
         }
         if (retorno == 3) {
             Console.WriteLine($"Seu saldo eh de R${getSaldo()}");
@@ -136,8 +135,7 @@ class MainClass {
             else {
                 depositar(valorDep);
                 Console.WriteLine($"O valor de R${valorDep} foi adicionado a sua conta!");
-                extrato.Add($"{index + 1} = Deposito de {valorDep}");
-                index++;
+                extrato.Add($"* Deposito de {valorDep}");
             } 
         }
         if (retorno == 5) {
@@ -148,8 +146,8 @@ class MainClass {
             else {
                 sacar(valorSaq);
                 Console.WriteLine($"O valor de R${valorSaq} foi retirado da sua conta!");
-                extrato.Add($"{index + 1} = Saque de {valorSaq}");
-                index++;
+                extrato.Add($"* Saque de {valorSaq}");
+
             }
         }
         if (retorno == 6) {
@@ -165,8 +163,8 @@ class MainClass {
             else {
                 sacar(valorT);
                 Console.WriteLine($"O valor de R${valorT} foi transferido para {destinatario} com sucesso!");
-                extrato.Add($"{index + 1} = Transferencia de R${valorT} para {destinatario}");
-                index++;
+                extrato.Add($"* Transferencia de R${valorT} para {destinatario}");
+
             }
         }
         if (retorno == 8) {
@@ -174,6 +172,7 @@ class MainClass {
             for (int y = 0; y < arrayExtrato.Length; y++) {
                 Console.WriteLine(arrayExtrato[y]);
             }
+            System.Threading.Thread.Sleep(1500);
         }
         if (retorno == 0) {
             Console.WriteLine("O banco Arael Picturs agradece a preferencia! Volte sempre!");
