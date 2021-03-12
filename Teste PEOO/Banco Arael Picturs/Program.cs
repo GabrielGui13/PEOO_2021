@@ -11,9 +11,10 @@ class MainClass {
             return;
         }
         Console.WriteLine($"Ola {nome}, qual o tipo de conta voce quer abrir? (CC ou CP)");
-        string tipo = Console.ReadLine();
-        if (tipo == "") {
-            redirecionar(0);
+        string tipo = Console.ReadLine().ToLower();
+        if (tipo == "" || tipo != "cc" && tipo != "cp") {
+            Console.WriteLine("Erro desconhecido!");
+            Console.WriteLine("Reiniciando sistema.");
             return;
         }
         Random rnd = new Random();
@@ -27,16 +28,20 @@ class MainClass {
         Console.WriteLine("");
         Console.WriteLine($"{getDono()}! Sua conta ja foi gerada!");
         Console.WriteLine("Aqui estao suas informacoes!");
+
         System.Threading.Thread.Sleep(2000);
         Console.WriteLine("");
+
         Console.WriteLine($"Proprietario = {getDono()}"); //retorna o nome do proprietario
         if (getConta().ToLower() == "cc") {
             Console.WriteLine("Tipo da conta = Conta Corrente"); //retorna CC
         }
-        else Console.WriteLine("Tipo da conta = Conta Poupanca"); //retorna CP
-        Console.WriteLine($"Numero da conta = {getNum()}");//Retorna numero da conta
+        else if (getConta().ToLower() == "cp") Console.WriteLine("Tipo da conta = Conta Poupanca"); //retorna CP
+        Console.WriteLine($"Numero da conta = {getNum()}"); //retorna numero da conta
+
         System.Threading.Thread.Sleep(2000);
         Console.WriteLine("");
+        
         abrirConta();
         if (getConta() == "CC") {
             setSaldo(50);
@@ -100,16 +105,24 @@ class MainClass {
         Console.WriteLine("4 - Depositar");
         Console.WriteLine("5 - Sacar");
         Console.WriteLine("6 - Informacoes da conta");
+        Console.WriteLine("7 - Transferencia");
+        Console.WriteLine("8 - Extrato");
         Console.WriteLine("0 - Sair");
     }
     public static void redirecionar(int retorno) {
+        int index = 1;
+        System.Collections.Generic.List<string> extrato = new System.Collections.Generic.List<string>();
         if (retorno == 1) {
             abrirConta();
             Console.WriteLine("Sua conta agora esta aberta!");
+            extrato.Add($"{index} = Abertura de conta");
+            index++;
         }
         if (retorno == 2) {
             fecharConta();
             Console.WriteLine("Sua conta agora esta fechada!");
+            extrato.Add($"{index + 1} = Fechamento de conta");
+            index++;
         }
         if (retorno == 3) {
             Console.WriteLine($"Seu saldo eh de R${getSaldo()}");
@@ -118,25 +131,49 @@ class MainClass {
             Console.WriteLine("Quanto voce gostaria de depositar?");
             double valorDep = double.Parse(Console.ReadLine());
             if (getStatus() == false) {
-                Console.WriteLine("A conta esta fechada!");
+                Console.WriteLine("Operacao negada! A conta esta fechada!");
             }
             else {
                 depositar(valorDep);
                 Console.WriteLine($"O valor de R${valorDep} foi adicionado a sua conta!");
+                extrato.Add($"{index + 1} = Deposito de {valorDep}");
+                index++;
             } 
         }
         if (retorno == 5) {
             Console.WriteLine("Quanto voce gostaria de sacar?");
             double valorSaq = double.Parse(Console.ReadLine());
-            if (getStatus() == false) Console.WriteLine("A sua conta esta fechada!");
+            if (getStatus() == false) Console.WriteLine("Operacao negada! A sua conta esta fechada!");
             else if (getSaldo() - valorSaq < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
             else {
                 sacar(valorSaq);
                 Console.WriteLine($"O valor de R${valorSaq} foi retirado da sua conta!");
+                extrato.Add($"{index + 1} = Saque de {valorSaq}");
+                index++;
             }
         }
         if (retorno == 6) {
             retornoConta();
+        }
+        if (retorno == 7) {
+            Console.WriteLine("Para quem voce deseja transferir?");
+            string destinatario = Console.ReadLine();
+            Console.WriteLine("Quanto voce gostaria de transferir?");
+            double valorT = double.Parse(Console.ReadLine());
+            if (getStatus() == false) Console.WriteLine("Operacao negada! A sua conta esta fechada!");
+            else if (getSaldo() - valorT < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
+            else {
+                sacar(valorT);
+                Console.WriteLine($"O valor de R${valorT} foi transferido para {destinatario} com sucesso!");
+                extrato.Add($"{index + 1} = Transferencia de R${valorT} para {destinatario}");
+                index++;
+            }
+        }
+        if (retorno == 8) {
+            string[] arrayExtrato = extrato.ToArray();
+            for (int y = 0; y < arrayExtrato.Length; y++) {
+                Console.WriteLine(arrayExtrato[y]);
+            }
         }
         if (retorno == 0) {
             Console.WriteLine("O banco Arael Picturs agradece a preferencia! Volte sempre!");
