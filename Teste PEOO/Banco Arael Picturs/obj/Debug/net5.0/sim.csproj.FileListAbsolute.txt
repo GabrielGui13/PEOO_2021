@@ -1,0 +1,32 @@
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\sim.exe
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\sim.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\sim.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\sim.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\ref\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\bin\Debug\net5.0\sim.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\ref\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\sim\obj\Debug\net5.0\sim.genruntimeconfig.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\sim.exe
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\sim.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\sim.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\sim.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\ref\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\bin\Debug\net5.0\sim.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\ref\sim.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Teste PEOO\Banco Arael Picturs\obj\Debug\net5.0\sim.genruntimeconfig.cache

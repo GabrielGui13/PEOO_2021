@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\sim\\sim.csproj": {}
+    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\Banco Arael Picturs\\sim.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\sim\\sim.csproj": {
+    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\Banco Arael Picturs\\sim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\sim\\sim.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\Banco Arael Picturs\\sim.csproj",
         "projectName": "sim",
-        "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\sim\\sim.csproj",
+        "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\Banco Arael Picturs\\sim.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\sim\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Teste PEOO\\Banco Arael Picturs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
