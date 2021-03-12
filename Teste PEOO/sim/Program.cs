@@ -31,7 +31,6 @@ class MainClass {
             int numeroRedirecionar = int.Parse(Console.ReadLine()); 
             redirecionar(numeroRedirecionar);
         }
-        
     }
     private static string nomeDono;
     private static string tipoConta;
@@ -61,8 +60,11 @@ class MainClass {
         Console.WriteLine("6 - Informacoes da conta");
         Console.WriteLine("0 - Sair");
     }
-    public static void redirecionar() {
-
+    public static void redirecionar(int retorno) {
+        if (retorno == 1) {
+            abrirConta();
+            Console.WriteLine();
+        }
     }
     public static void abrirConta() {
         setStatus(true);
