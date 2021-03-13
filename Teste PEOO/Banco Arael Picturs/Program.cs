@@ -19,7 +19,16 @@ class MainClass {
         }
         Random rnd = new Random();
         int numero = rnd.Next(1000, 9999);
-
+        Console.WriteLine("Por favor crie uma senha de 4 digitos para continuar");
+        string inserirSenha = Console.ReadLine();
+        
+        if (inserirSenha.Length > 4) {
+            Console.WriteLine("Erro desconhecido!");
+            Console.WriteLine("Reiniciando sistema.");
+            return;
+        }
+        else setSenha(inserirSenha); 
+        
         setDono(nome);
         setConta(tipo);
         setNum(numero);
@@ -74,6 +83,7 @@ class MainClass {
     private static double saldo;
     private static bool status;
 
+    private static string senha;
     public static void criandoConta() {
         Console.WriteLine("");
         Console.Write("Aguarde");
@@ -113,18 +123,38 @@ class MainClass {
     public static void redirecionar(int retorno) {
         
         if (retorno == 1) {
-            abrirConta();
-            Console.WriteLine("Sua conta agora esta aberta!");
-            extrato.Add("* Abertura de conta");
+            Console.WriteLine("Digite sua senha de 4 digitos para continuar");
+            string temporaryPassword = Console.ReadLine();
+            if (temporaryPassword != getSenha()) {
+                Console.WriteLine("Senha incorreta! Tente novamente.");
+            }
+            else {
+                abrirConta();
+                Console.WriteLine("Sua conta agora esta aberta!");
+                extrato.Add("* Abertura de conta");
+            }
         }
         if (retorno == 2) {
-            fecharConta();
-            Console.WriteLine("Sua conta agora esta fechada!");
-            extrato.Add("* Fechamento de conta");
-
+            Console.WriteLine("Digite sua senha de 4 digitos para continuar");
+            string temporaryPassword = Console.ReadLine();
+            if (temporaryPassword != getSenha()) {
+                Console.WriteLine("Senha incorreta! Tente novamente.");
+            }
+            else {
+                fecharConta();
+                Console.WriteLine("Sua conta agora esta fechada!");
+                extrato.Add("* Fechamento de conta");
+            }
         }
         if (retorno == 3) {
+            Console.WriteLine("Digite sua senha de 4 digitos para continuar");
+            string temporaryPassword = Console.ReadLine();
+            if (temporaryPassword != getSenha()) {
+                Console.WriteLine("Senha incorreta! Tente novamente.");
+            }
+            else {
             Console.WriteLine($"Seu saldo eh de R${getSaldo()}");
+            }
         }
         if (retorno == 4) {
             Console.WriteLine("Quanto voce gostaria de depositar?");
@@ -133,21 +163,34 @@ class MainClass {
                 Console.WriteLine("Operacao negada! A conta esta fechada!");
             }
             else {
-                depositar(valorDep);
-                Console.WriteLine($"O valor de R${valorDep} foi adicionado a sua conta!");
-                extrato.Add($"* Deposito de {valorDep}");
+                Console.WriteLine("Digite sua senha de 4 digitos para continuar");
+                string temporaryPassword = Console.ReadLine();
+                if (temporaryPassword != getSenha()) {
+                    Console.WriteLine("Senha incorreta! Tente novamente.");
+                }
+                else {
+                    depositar(valorDep);
+                    Console.WriteLine($"O valor de R${valorDep} foi adicionado a sua conta!");
+                    extrato.Add($"* Deposito de {valorDep}");
+                }
             } 
         }
         if (retorno == 5) {
             Console.WriteLine("Quanto voce gostaria de sacar?");
             double valorSaq = double.Parse(Console.ReadLine());
             if (getStatus() == false) Console.WriteLine("Operacao negada! A sua conta esta fechada!");
-            else if (getSaldo() - valorSaq < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
+            Console.WriteLine("Digite sua senha de 4 digitos para continuar");
+            string temporaryPassword = Console.ReadLine();
+            if (temporaryPassword != getSenha()) {
+                Console.WriteLine("Senha incorreta! Tente novamente.");
+            }
             else {
-                sacar(valorSaq);
-                Console.WriteLine($"O valor de R${valorSaq} foi retirado da sua conta!");
-                extrato.Add($"* Saque de {valorSaq}");
-
+                if (getSaldo() - valorSaq < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
+                else {
+                    sacar(valorSaq);
+                    Console.WriteLine($"O valor de R${valorSaq} foi retirado da sua conta!");
+                    extrato.Add($"* Saque de {valorSaq}");
+                }
             }
         }
         if (retorno == 6) {
@@ -161,10 +204,16 @@ class MainClass {
             if (getStatus() == false) Console.WriteLine("Operacao negada! A sua conta esta fechada!");
             else if (getSaldo() - valorT < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
             else {
-                sacar(valorT);
-                Console.WriteLine($"O valor de R${valorT} foi transferido para {destinatario} com sucesso!");
-                extrato.Add($"* Transferencia de R${valorT} para {destinatario}");
-
+                Console.WriteLine("Digite sua senha de 4 digitos para continuar");
+                string temporaryPassword = Console.ReadLine();
+                if (temporaryPassword != getSenha()) {
+                    Console.WriteLine("Senha incorreta! Tente novamente.");
+                }
+                else {
+                    sacar(valorT);
+                    Console.WriteLine($"O valor de R${valorT} foi transferido para {destinatario} com sucesso!");
+                    extrato.Add($"* Transferencia de R${valorT} para {destinatario}");
+                }
             }
         }
         if (retorno == 8) {
@@ -220,6 +269,12 @@ class MainClass {
     }
     public static double getSaldo () {
         return saldo;
+    }
+    public static void setSenha(string password) {
+        senha = password;
+    }
+    public static string getSenha() {
+        return senha;
     }
 }
 
