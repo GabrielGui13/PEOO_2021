@@ -132,6 +132,7 @@ class MainClass {
             if (getStatus() == false) {
                 Console.WriteLine("Operacao negada! A conta esta fechada!");
             }
+            else if (valorDep < 0) Console.WriteLine("Valor invalido!");
             else {
                 depositar(valorDep);
                 Console.WriteLine($"O valor de R${valorDep} foi adicionado a sua conta!");
@@ -143,6 +144,7 @@ class MainClass {
             double valorSaq = double.Parse(Console.ReadLine());
             if (getStatus() == false) Console.WriteLine("Operacao negada! A sua conta esta fechada!");
             else if (getSaldo() - valorSaq < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
+            else if (valorSaq < 0) Console.WriteLine("Valor invalido!");
             else {
                 sacar(valorSaq);
                 Console.WriteLine($"O valor de R${valorSaq} foi retirado da sua conta!");
@@ -159,6 +161,7 @@ class MainClass {
             Console.WriteLine("Quanto voce gostaria de transferir?");
             double valorT = double.Parse(Console.ReadLine());
             if (getStatus() == false) Console.WriteLine("Operacao negada! A sua conta esta fechada!");
+            else if (valorT < 0) Console.WriteLine("Valor invalido!");
             else if (getSaldo() - valorT < 0) Console.WriteLine("Voce nao tem saldo suficiente!");
             else {
                 sacar(valorT);
