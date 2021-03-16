@@ -277,4 +277,3 @@ class MainClass {
         return senha;
     }
 }
-
