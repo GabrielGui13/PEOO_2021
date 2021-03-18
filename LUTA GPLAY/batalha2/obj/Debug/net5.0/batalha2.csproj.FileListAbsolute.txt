@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\batalha2.exe
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\batalha2.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\batalha2.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\batalha2.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\batalha2.dll
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\ref\batalha2.dll
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\bin\Debug\net5.0\batalha2.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.dll
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\ref\batalha2.dll
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\LUTA GPLAY\batalha2\obj\Debug\net5.0\batalha2.genruntimeconfig.cache
