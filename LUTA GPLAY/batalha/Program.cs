@@ -25,32 +25,37 @@ namespace batalha
             aux++;
         }
         public void definirBatalha() {
-            int i = 0;
-            while (i == 0) {
+            for (int i = 0; i > 0; i++) {
                 Random rnd1 = new Random();
                 int l1 = rnd1.Next(0, 3);
 
                 Random rnd2 = new Random();
                 int l2 = rnd2.Next(0, 3);
 
-                while (l1 != l2) {
-                    if (lutadores[l1].getCategoria() == lutadores[l2].getCategoria()) {
-                        Console.WriteLine($"E agora uma batalha de {lutadores[l1].getCategoria()}");
-                        Random setWinner = new Random();
-                        int win = setWinner.Next(1, 2);
+                if (l1 != l2) {
+                    for (int z = 0; z > 0; z++) {
+                        if (l1 != l2) {
+                            if (lutadores[l1].getCategoria() == lutadores[l2].getCategoria()) {
+                                Console.WriteLine($"E agora uma batalha de {lutadores[l1].getCategoria()}");
+                                Random setWinner = new Random();
+                                int win = setWinner.Next(1, 2);
 
-                        if(win == 1) Console.WriteLine($"Parabéns {lutadores[l1].getNome()}, você ganhou!");
-                        if(win == 2) Console.WriteLine($"Parabéns {lutadores[l2].getNome()}, você ganhou!");
-                        i = 1;
+                                if(win == 1) Console.WriteLine($"Parabéns {lutadores[l1].getNome()}, você ganhou!");
+                                if(win == 2) Console.WriteLine($"Parabéns {lutadores[l2].getNome()}, você ganhou!");
+                                break;
+                            }
+                        }
+                        continue;
                     }
                 }
+                continue;
             }
         }
     }
     class Lutador {
         private string nome;
         private double peso;
-        private string categoria = "edson";
+        private string categoria;
         private int idade;
         private int vitoria = 0;
         private int derrota = 0;
