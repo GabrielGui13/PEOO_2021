@@ -7,15 +7,14 @@ namespace batalha
         public static void Main(string[] args)
         {   
             Metodos x = new Metodos();
-            Lutador champ1 = new Lutador("Rafael", 104, 17);
+            Lutador champ1 = new Lutador("Rafael", 107, 17, 5, 0);
             x.armazenarLutador(champ1);
-            Lutador champ2 = new Lutador("Edson", 148, 16);
+            Lutador champ2 = new Lutador("Edson", 148, 16, 4, 1);
             x.armazenarLutador(champ2);
-            Lutador champ3 = new Lutador("Fonti", 61, 17);
+            Lutador champ3 = new Lutador("Fonti", 61, 17, 3 ,2);
             x.armazenarLutador(champ3);
-            Lutador champ4 = new Lutador("Bruce", 65, 17);
-            x.armazenarLutador(champ4);
-            Console.WriteLine(x.lutadores[0]);
+            Lutador champ4 = new Lutador("Bruce", 65, 17, 0, 5);
+            x.definirBatalha();
         }
     }
     class Metodos {
@@ -25,19 +24,46 @@ namespace batalha
             lutadores[aux] = y;
             aux++;
         }
-        
+        public void definirBatalha() {
+            int i = 0;
+            while (i == 0) {
+                Random rnd1 = new Random();
+                int l1 = rnd1.Next(0, 3);
+
+                Random rnd2 = new Random();
+                int l2 = rnd2.Next(0, 3);
+
+                while (l1 != l2) {
+                    if (lutadores[l1].getCategoria() == lutadores[l2].getCategoria()) {
+                        Console.WriteLine($"E agora uma batalha de {lutadores[l1].getCategoria()}");
+                        Random setWinner = new Random();
+                        int win = setWinner.Next(1, 2);
+
+                        if(win == 1) Console.WriteLine($"Parabéns {lutadores[l1].getNome()}, você ganhou!");
+                        if(win == 2) Console.WriteLine($"Parabéns {lutadores[l2].getNome()}, você ganhou!");
+                        i = 1;
+                    }
+                }
+            }
+        }
     }
     class Lutador {
         private string nome;
         private double peso;
-        private string categoria;
+        private string categoria = "edson";
         private int idade;
-        private int vitoria;
-        private int derrota;
-        public Lutador (string xnome, double xpeso, int xidade) {
-            nome = xnome;
-            peso = xpeso;
-            idade = xidade;
+        private int vitoria = 0;
+        private int derrota = 0;
+        public Lutador (string xnome, double xpeso, int xidade, int xvitoria, int xderrota) {
+            this.nome = xnome;
+            this.setPeso(xpeso);
+            this.idade = xidade;
+            this.vitoria = xvitoria;
+            this.derrota = xderrota;
+        }
+
+        public override string ToString() {
+            return $"{nome} {peso} {categoria} {idade} {vitoria} {derrota}";
         }
 
         public void setNome (string nome) {
@@ -48,17 +74,19 @@ namespace batalha
         }
         public void setPeso (double peso) {
             this.peso = peso;
+            setCategoria();
         }
-        public string getPeso() {
-            return peso.ToString();
+        public double getPeso() {
+            return peso;
         }
         public void setCategoria () {
-            if (peso > 100) this.categoria = "Peso pesado";
-            if (peso > 80 && peso < 100) this.categoria = "Peso medio";
-            if (peso > 60 && peso < 80) this.categoria = "Peso leve";
+            if (this.peso >= 100) this.categoria = "Peso pesado";
+            else if (this.peso >= 80 && this.peso < 100) this.categoria = "Peso medio";
+            else if (this.peso >= 60 && this.peso < 80) this.categoria = "Peso leve";
+            else this.categoria = "Peso inválido";
         }
         public string getCategoria() {
-            return categoria;
+            return this.categoria;
         }
         public void setIdade (int idade) {
             this.idade = idade;

@@ -6,7 +6,7 @@ namespace batalha2
     {
         public static void Main(string[] args)
         {   
-            Lutador champ1 = new Lutador("Rafael", 104, 17, 5, 0);
+            Lutador champ1 = new Lutador("Rafael", 71, 17, 5, 0);
             champ1.apresentarLutador();
             Lutador champ2 = new Lutador("Edson", 148, 16, 4, 1);
             champ2.apresentarLutador();
@@ -35,7 +35,6 @@ namespace batalha2
             Console.WriteLine($"E {getDerrota()} derrota(s)");
             Console.WriteLine("");
         }
-
         public void setNome (string nome) {
             this.nome = nome;
         }
@@ -45,13 +44,14 @@ namespace batalha2
         public void setPeso (double peso) {
             this.peso = peso;
         }
-        public string getPeso() {
-            return peso.ToString();
+        public double getPeso() {
+            return peso;
         }
         private void setCategoria () {
-            if (peso > 100) this.categoria = "Peso pesado";
-            if (peso > 80 && peso < 100) this.categoria = "Peso medio";
-            if (peso > 60 && peso < 80) this.categoria = "Peso leve";
+            if (this.peso > 100) this.categoria = "Peso pesado";
+            else if (this.peso > 80) this.categoria = "Peso medio";
+            else if (this.peso > 60) this.categoria = "Peso leve";
+            else this.categoria = "Peso Inválido";
         }
         public string getCategoria() {
             return categoria;
