@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\LUTA GPLAY\\batalha\\batalha.csproj",
+      "projectUniqueName": "C:\\Users\\user\\PEOO_2021\\LUTA GPLAY\\batalha\\batalha.csproj",
       "projectName": "batalha",
-      "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\LUTA GPLAY\\batalha\\batalha.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\LUTA GPLAY\\batalha\\obj\\",
+      "projectPath": "C:\\Users\\user\\PEOO_2021\\LUTA GPLAY\\batalha\\batalha.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\PEOO_2021\\LUTA GPLAY\\batalha\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

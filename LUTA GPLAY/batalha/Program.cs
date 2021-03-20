@@ -14,6 +14,7 @@ namespace batalha
             Lutador champ3 = new Lutador("Fonti", 61, 17, 3 ,2);
             x.armazenarLutador(champ3);
             Lutador champ4 = new Lutador("Bruce", 65, 17, 0, 5);
+            x.armazenarLutador(champ4);
             x.definirBatalha();
         }
     }
@@ -25,31 +26,32 @@ namespace batalha
             aux++;
         }
         public void definirBatalha() {
-            for (int i = 0; i > 0; i++) {
+            int acl1 = 0;
+            int acl2 = 0;
+            for (int i = 1; i != 0; i++) {
                 Random rnd1 = new Random();
-                int l1 = rnd1.Next(0, 3);
+                int l1 = rnd1.Next(0, 4);
+                acl1 = l1;
 
                 Random rnd2 = new Random();
-                int l2 = rnd2.Next(0, 3);
+                int l2 = rnd2.Next(0, 4);
+                acl2 = l2;
 
-                if (l1 != l2) {
-                    for (int z = 0; z > 0; z++) {
-                        if (l1 != l2) {
-                            if (lutadores[l1].getCategoria() == lutadores[l2].getCategoria()) {
-                                Console.WriteLine($"E agora uma batalha de {lutadores[l1].getCategoria()}");
-                                Random setWinner = new Random();
-                                int win = setWinner.Next(1, 2);
-
-                                if(win == 1) Console.WriteLine($"Parabéns {lutadores[l1].getNome()}, você ganhou!");
-                                if(win == 2) Console.WriteLine($"Parabéns {lutadores[l2].getNome()}, você ganhou!");
-                                break;
-                            }
-                        }
-                        continue;
-                    }
+                if (l1 == l2) continue;
+                else {
+                    Console.WriteLine($"{l1} e {l2}");
+                    break;
                 }
-                continue;
             }
+            Console.WriteLine("A batalha está definida!");
+            Console.WriteLine($"O campeão {lutadores[acl1].getNome()}! de {lutadores[acl1].getPeso()}kg");
+            Console.WriteLine($"Contra o poderoso {lutadores[acl2].getNome()}! de {lutadores[acl2].getPeso()}kg");
+            
+            Random win = new Random();
+            int setWinner = win.Next(1, 3);
+            //if (setWinner == 0) Console.WriteLine($"E o grande vencedor é {lutadores[acl1].getNome()}!!");
+            //else if (setWinner == 1) Console.WriteLine($"E o grande vencedor é {lutadores[acl2].getNome()}!!");
+            Console.WriteLine(setWinner);
         }
     }
     class Lutador {
