@@ -11,9 +11,9 @@ namespace Q4
             x.SetConta(895945);
             x.SetSaldo(3000);
             Console.WriteLine(x.GetSaldo());
-            x.Deposito();
+            x.Deposito(50);
             Console.WriteLine(x.GetSaldo());
-            x.Saque();
+            x.Saque(50);
             Console.WriteLine(x.GetSaldo());
         }
     }
