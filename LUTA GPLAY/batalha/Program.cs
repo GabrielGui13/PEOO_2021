@@ -7,13 +7,13 @@ namespace batalha
         public static void Main(string[] args)
         {   
             Metodos x = new Metodos();
-            Lutador champ1 = new Lutador("Gabriel", 62, 17, 5, 0);
+            Lutador champ1 = new Lutador("Rafael", 104, 17, 5, 0);
             x.armazenarLutador(champ1);
-            Lutador champ2 = new Lutador("Arthur", 77, 16, 4, 1);
+            Lutador champ2 = new Lutador("Edson", 113, 16, 4, 1);
             x.armazenarLutador(champ2);
-            Lutador champ3 = new Lutador("Neto bola", 90, 17, 3 ,2);
+            Lutador champ3 = new Lutador("Yan", 88, 17, 3 ,2);
             x.armazenarLutador(champ3);
-            Lutador champ4 = new Lutador("Rafaela", 47, 17, 0, 5);
+            Lutador champ4 = new Lutador("Fonti", 60, 17, 0, 5);
             x.armazenarLutador(champ4);
             x.definirBatalha();
             x.lutar();
@@ -80,12 +80,12 @@ namespace batalha
                     case 1: vidaDesafiado -= 5; Console.WriteLine($"{desafiante.getNome()} derruba {desafiado.getNome()}!"); break;
                     case 2: vidaDesafiado -= 5; Console.WriteLine($"{desafiante.getNome()} dá uma rasteira segura em {desafiado.getNome()}!"); break;
                     case 3: vidaDesafiado -= 5; Console.WriteLine($"{desafiante.getNome()} dá um chute na costela de {desafiado.getNome()}!"); break;
-                    case 4: vidaDesafiado -= 10; Console.WriteLine($"Um soco de direita de {desafiante.getNome()} em {desafiado.getNome()}!"); break;
+                    case 4: vidaDesafiado -= 10; if(desafiante.getNome() == "Fonti"){Console.WriteLine($"E Fonti da uma cotocada no cu de {desafiado.getNome()}! Essa foi feia!"); vidaDesafiado -= 100;} else Console.WriteLine($"Um soco de direita de {desafiante.getNome()} em {desafiado.getNome()}!"); break;
                     case 5: vidaDesafiado -= 10; vidaDesafiante -= 2; if(desafiante.getNome() == "Edson") {vidaDesafiado -= 100; vidaDesafiante += 2; Console.WriteLine($"Nunca vi uma cabeçada como essa! Que cabeçada {desafiante.getNome()} deu em {desafiado.getNome()}! Já era!");} else Console.WriteLine($"Uau! Que cabeçada {desafiante.getNome()} deu em {desafiado.getNome()}!"); break;
                     case 6: vidaDesafiado -= 10; Console.WriteLine($"Arremesso lateral de {desafiante.getNome()} em {desafiado.getNome()}!"); break;
                     case 7: vidaDesafiado -= 15; Console.WriteLine($"E {desafiante.getNome()} dá uma voadora na cara de {desafiado.getNome()}!"); break;
                     case 8: vidaDesafiado -= 15; Console.WriteLine($"{desafiante.getNome()} joga {desafiado.getNome()} pra cima!"); break;
-                    case 9: vidaDesafiado -= 15; Console.WriteLine($"{desafiante.getNome()} da uma paulada em {desafiado.getNome()}!"); break;
+                    case 9: vidaDesafiado -= 15; if(desafiante.getNome() == "Rafael"){Console.WriteLine($"Ui! Rafael deu uma dura em {desafiado.getNome()}!"); vidaDesafiado -= 100;} else Console.WriteLine($"{desafiante.getNome()} da uma paulada em {desafiado.getNome()}!"); break;
                     case 10: vidaDesafiado -= 35; if(desafiante.getPeso() > desafiado.getPeso()) vidaDesafiado -= 5; Console.WriteLine($"E {desafiante.getNome()} acerta um ataque crítico em {desafiado.getNome()}!"); break;
                     case 11: Console.WriteLine($"E {desafiante.getNome()} erra o ataque!"); break;
                     case 12: Console.WriteLine($"Passou direto! {desafiante.getNome()} erra o ataque!"); break;
@@ -98,12 +98,12 @@ namespace batalha
                     case 1: vidaDesafiante -= 5; Console.WriteLine($"E {desafiado.getNome()} derruba {desafiante.getNome()}!"); break;
                     case 2: vidaDesafiante -= 5; Console.WriteLine($"{desafiado.getNome()} dá uma rasteira segura em {desafiante.getNome()}!"); break;
                     case 3: vidaDesafiante -= 5; Console.WriteLine($"{desafiado.getNome()} dá um chute na costela de {desafiante.getNome()}!"); break;
-                    case 4: vidaDesafiante -= 10; Console.WriteLine($"Soco de direita de {desafiado.getNome()} em {desafiante.getNome()}!"); break;
+                    case 4: vidaDesafiante -= 10; if(desafiado.getNome() == "Fonti"){Console.WriteLine($"E Fonti da uma cotocada no cu de {desafiante.getNome()}! Essa foi feia!"); vidaDesafiante -= 100;} else Console.WriteLine($"Um soco de direita de {desafiado.getNome()} em {desafiante.getNome()}!"); break;
                     case 5: vidaDesafiante -= 10; vidaDesafiado -= 2; if(desafiado.getNome() == "Edson") {vidaDesafiante -= 100; vidaDesafiado += 2;Console.WriteLine($"Nunca vi uma cabeçada como essa! Que cabeçada {desafiado.getNome()} deu em {desafiante.getNome()}! Já era!");} else Console.WriteLine($"Uau! Que cabeçada {desafiado.getNome()} deu em {desafiante.getNome()}!"); break;
                     case 6: vidaDesafiante -= 10; Console.WriteLine($"Arremesso lateral de {desafiado.getNome()} em {desafiante.getNome()}!"); break;
                     case 7: vidaDesafiante -= 15; Console.WriteLine($"E {desafiado.getNome()} dá uma voadora na cara de {desafiante.getNome()}!"); break;
                     case 8: vidaDesafiante -= 15; Console.WriteLine($"{desafiado.getNome()} joga {desafiante.getNome()} pra cima!"); break;
-                    case 9: vidaDesafiante -= 15; Console.WriteLine($"{desafiado.getNome()} da uma paulada em {desafiante.getNome()}!"); break;
+                    case 9: vidaDesafiante -= 15; if(desafiado.getNome() == "Rafael"){Console.WriteLine($"Ui! Rafael deu uma dura em {desafiante.getNome()}!"); vidaDesafiante -= 100;} else Console.WriteLine($"{desafiado.getNome()} da uma paulada em {desafiante.getNome()}!"); break;
                     case 10: vidaDesafiante -= 35; if(desafiado.getPeso() > desafiante.getPeso()) vidaDesafiante -= 5; Console.WriteLine($"E {desafiado.getNome()} acerta um ataque crítico em {desafiante.getNome()}!"); break;
                     case 11: Console.WriteLine($"E {desafiado.getNome()} erra o ataque!"); break;
                     case 12: Console.WriteLine($"Passou direto! {desafiado.getNome()} erra o ataque!"); break;
@@ -111,8 +111,14 @@ namespace batalha
                 }
                 Console.WriteLine(" ");
                 System.Threading.Thread.Sleep(1500);
-
-                if (vidaDesafiado <= 0) { //vitoria desafiante
+                
+                if (vidaDesafiado <= 0 && vidaDesafiante <= 0) {
+                    Console.WriteLine($"Acabou a luta em {turno} turnos! Empate!");
+                    Console.WriteLine($"{desafiado.getNome()} = 0 de vida");
+                    Console.WriteLine($"{desafiante.getNome()} = 0 de vida");
+                    break;
+                }
+                else if (vidaDesafiado <= 0) { //vitoria desafiante
                     Console.WriteLine($"Acabou a luta em {turno} turnos! Vitória do {desafiante.getNome()}!");
                     Console.WriteLine($"{desafiante.getNome()} = {vidaDesafiante} de vida");
                     Console.WriteLine($"{desafiado.getNome()} = 0 de vida");
@@ -121,12 +127,6 @@ namespace batalha
                 else if (vidaDesafiante <= 0) { //vitoria desafiado
                     Console.WriteLine($"Acabou a luta em {turno} turnos! Vitória do {desafiado.getNome()}!");
                     Console.WriteLine($"{desafiado.getNome()} = {vidaDesafiado} de vida");
-                    Console.WriteLine($"{desafiante.getNome()} = 0 de vida");
-                    break;
-                }
-                else if (vidaDesafiado <= 0 && vidaDesafiante <= 0) {
-                    Console.WriteLine($"Acabou a luta em {turno} turnos! Empate!");
-                    Console.WriteLine($"{desafiado.getNome()} = 0 de vida");
                     Console.WriteLine($"{desafiante.getNome()} = 0 de vida");
                     break;
                 }
