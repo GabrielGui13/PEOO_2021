@@ -13,8 +13,8 @@ namespace Q1
             Paciente Gui = new Paciente("Guilherme", "097.819.644-99", "(84)99911-0101", GuiNasc);
 
             DateTime LavNasc = new DateTime(2018, 02, 15);
-            Paciente Lav = new Paciente("Guilherme", "097.819.644-99", "(84)99911-0101", LavNasc);
-            
+            Paciente Lav = new Paciente("Lavinia", "097.819.644-99", "(84)99911-0101", LavNasc);
+
             Console.WriteLine(Gabriel.idade());
             Console.WriteLine(Gui.idade());
             Console.WriteLine(Lav.idade());
