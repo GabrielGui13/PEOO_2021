@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\Livraria.exe
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\Livraria.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\Livraria.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\Livraria.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\Livraria.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\ref\Livraria.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\bin\Debug\net5.0\Livraria.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\ref\Livraria.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\Revisão3\Livraria\obj\Debug\net5.0\Livraria.genruntimeconfig.cache
