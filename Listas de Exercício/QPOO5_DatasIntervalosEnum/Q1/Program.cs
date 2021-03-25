@@ -7,8 +7,8 @@ namespace Q1
         static void Main(string[] args)
         {   
             Paciente Gabriel = new Paciente("Gabriel", "097.819.644-99", "(84)99911-0101", new DateTime(2002, 08, 13));
-            Paciente Gui = new Paciente("Guilherme", "097.819.644-99", "(84)99911-0101", new DateTime(2005, 03, 01));
-            Paciente Lav = new Paciente("Lavinia", "097.819.644-99", "(84)99911-0101", new DateTime(2018, 02, 15));
+            Paciente Gui = new Paciente("Guilherme", "097.819.644-99", "(84)99911-0101", new DateTime(2005, 05, 27));
+            Paciente Lav = new Paciente("Rafaela", "097.819.644-99", "(84)99911-0101", new DateTime(2003, 04, 10));
 
             Console.WriteLine(Gabriel.idade());
             Console.WriteLine(Gui.idade());
@@ -27,9 +27,9 @@ namespace Q1
         }
         public string idade() {
             DateTime atual = DateTime.Now;
-            int diaAtual = atual.Day;
-            int mesAtual = atual.Month;
             int anoAtual = atual.Year;
+            int mesAtual = atual.Month;
+            int diaAtual = atual.Day;
 
             int anoPaciente = nascimento.Year; 
             int mesPaciente = nascimento.Month;
