@@ -33,12 +33,12 @@ namespace batalha
             int acl2 = 0;
             for (int i = 1; i != 0; i++) {
                 Random rnd1 = new Random();
-                int l1 = rnd1.Next(0, 4);
+                int l1 = rnd1.Next(0, lutadores.Length);
                 acl1 = l1;
                 this.desafiante = lutadores[l1];
 
                 Random rnd2 = new Random();
-                int l2 = rnd2.Next(0, 4);
+                int l2 = rnd2.Next(0, lutadores.Length);
                 acl2 = l2;
                 this.desafiado = lutadores[l2];
 
@@ -64,10 +64,10 @@ namespace batalha
             int aux = 0;
             while (aux != 1) {
                 Random gerarAtaque1 = new Random();
-                int ataque1 = gerarAtaque1.Next(1, 14);
+                int ataque1 = gerarAtaque1.Next(1, 13);
 
                 Random gerarAtaque2 = new Random();
-                int ataque2 = gerarAtaque2.Next(1, 14);
+                int ataque2 = gerarAtaque2.Next(1, 13);
 
                 System.Threading.Thread.Sleep(1500);
                 Console.WriteLine("");
@@ -89,7 +89,6 @@ namespace batalha
                     case 10: vidaDesafiado -= 35; if(desafiante.getPeso() > desafiado.getPeso()) vidaDesafiado -= 5; Console.WriteLine($"E {desafiante.getNome()} acerta um ataque crítico em {desafiado.getNome()}!"); break;
                     case 11: Console.WriteLine($"E {desafiante.getNome()} erra o ataque!"); break;
                     case 12: Console.WriteLine($"Passou direto! {desafiante.getNome()} erra o ataque!"); break;
-                    case 13: Console.WriteLine($"Mas já? {desafiante.getNome()} acaba com {desafiado.getNome()}!"); vidaDesafiado -= 100; break;
                 }
 
                 System.Threading.Thread.Sleep(1500);
@@ -107,7 +106,6 @@ namespace batalha
                     case 10: vidaDesafiante -= 35; if(desafiado.getPeso() > desafiante.getPeso()) vidaDesafiante -= 5; Console.WriteLine($"E {desafiado.getNome()} acerta um ataque crítico em {desafiante.getNome()}!"); break;
                     case 11: Console.WriteLine($"E {desafiado.getNome()} erra o ataque!"); break;
                     case 12: Console.WriteLine($"Passou direto! {desafiado.getNome()} erra o ataque!"); break;
-                    case 13: Console.WriteLine($"Mas já? {desafiado.getNome()} acaba com {desafiante.getNome()}!"); vidaDesafiante -= 100; break;
                 }
                 Console.WriteLine(" ");
                 System.Threading.Thread.Sleep(1500);
