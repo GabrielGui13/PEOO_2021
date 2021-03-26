@@ -7,8 +7,8 @@ namespace Q4
         static void Main(string[] args)
         {
             Estagiario gabriel = new Estagiario("Gabriel", "097.819.644-99", "(84) 99911-0101");
-            gabriel.setDias(1);
             gabriel.setTurno(3);
+            gabriel.setDias(5);
             Console.WriteLine(gabriel);
         }
     }
@@ -16,45 +16,22 @@ namespace Q4
         private string nome, cpf, telefone;
         private Dias dias;
         private Turno turno;
-        private Dias[] armazenarDias = new Dias[5];
         public Estagiario(string n, string c, string t) {
             this.nome = n;
             this.cpf = c;
             this.telefone = t;
         }
         public void setDias(int seletor) {
-            Random x = new Random();
-            int diaEsc = x.Next(1, 6);
-
             switch (seletor) {
-                case 1: armazenarDias[0] = (Dias) diaEsc; break;
-                case 2: for (int i = 0; i < 5; i++) {
-                    if (i == 0 || i == 2 || i == 4) continue;
-                    armazenarDias[i] = (Dias) i + 1;
-                }; break;
-                case 3: for (int i = 0; i < 5; i++) {
-                    if (i == 1 || i == 3) continue;
-                    armazenarDias[i] = (Dias) i + 1;
-                }; break;
-                case 4: for (int i = 0; i < 5; i++) {
-                    if (i == diaEsc) continue;
-                    armazenarDias[i] = (Dias) i + 1;
-                }; break;
-                case 5: for (int i = 0; i < 5; i++) {
-                    armazenarDias[i] = (Dias) i + 1;
-                }; break;
-            }
-            
-            for (int i = 0; i < armazenarDias.Length; i++) {
-                this.dias = armazenarDias[i];
+                case 1: this.dias = (Dias) 1; break;
+                case 2: this.dias = (Dias) 3; break;
+                case 3: this.dias = (Dias) 7; break;
+                case 4: this.dias = (Dias) 15; break;
+                case 5: this.dias = (Dias) 31; break;
             }
         }
         public void setTurno (int seletor) {
-            switch (seletor) {
-                case 1: this.turno = (Turno) 1; break;
-                case 2: this.turno = (Turno) 2; break;
-                case 3: this.turno = (Turno) 3; break;
-            }
+            this.turno = (Turno) seletor;
         }
         public Dias getDias() {
             return this.dias;
@@ -64,11 +41,21 @@ namespace Q4
         }
         public override string ToString()
         {
-            return $"Nome = {nome} \nCPF = {cpf} \nTelefone = {telefone} \nDias = {dias} \nTurno = {getTurno()}";
+            return $"Nome = {nome} \nCPF = {cpf} \nTelefone = {telefone} \nDias = {getDias()} \nTurno = {getTurno()}";
         }
     }
+    [Flags]
     enum Dias : int {
-        segunda = 1, terça = 2, quarta = 3, quinta = 4, sexta = 5
+        nenhum = 0,
+        segunda = 1,
+        terça = 2,
+        // 3 = segunda, terca
+        quarta = 4,
+        // 7 = segunda, terca, quarta
+        quinta = 8,
+        //15 = segunda, terca, quarta, quinta
+        sexta = 16
+        // 31 = segunda, terca, quarta, quinta, sexta
     }
     enum Turno : int {
         matutino = 1, vespertino = 2, noturno = 3

@@ -8,7 +8,7 @@ namespace Q5
         {
             Estagio gabriel = new Estagio("Gabriel", "Google");
             gabriel.iniciar(new DateTime(2021, 01, 01));
-            gabriel.finalizar(new DateTime(2021, 03, 24));
+            gabriel.finalizar(new DateTime(2021, 03, 26));
             Console.WriteLine(gabriel); 
         }
     }
