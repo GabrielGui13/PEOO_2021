@@ -8,18 +8,16 @@ namespace Q5
         {
             Estagio gabriel = new Estagio("Gabriel", "Google");
             gabriel.iniciar(new DateTime(2021, 01, 01));
-            gabriel.finalizar(new DateTime(2021, 03, 25));
-            //Console.WriteLine(gabriel); 
-            Console.WriteLine(gabriel.mostrarSituacao());
+            gabriel.finalizar(new DateTime(2021, 03, 24));
+            Console.WriteLine(gabriel); 
         }
     }
     class Estagio {
         private string estagiario, empresa;
-        private DateTime dataInicio, dataCancelamento, dataFim;
+        public DateTime dataInicio, dataCancelamento, dataFim;
         private int situacao;
         public Estagio (string est, string emp) {
-            this.situacao = this.situacao = (int) SituacaoEstagio.cadastrado;
-; 
+            this.situacao = (int) SituacaoEstagio.cadastrado;
             this.estagiario = est;
             this.empresa = emp;
         }
@@ -48,24 +46,24 @@ namespace Q5
             return false;
         }
         public TimeSpan tempoEstagio() {
-            if (situacao == 3) {
-                TimeSpan resultado = dataCancelamento.Subtract(dataInicio);
-            }
-            if (situacao == 4) {
-                TimeSpan resultado = dataFim.Subtract(dataInicio);
-            }
-            return resultado;
+            TimeSpan resultadoFim = dataFim.Subtract(dataInicio);
+            TimeSpan resultadoCanc = dataCancelamento.Subtract(dataInicio);
+            TimeSpan result;
+
+            if (mostrarSituacao() == (int) SituacaoEstagio.finalizado) result = resultadoFim;
+            else result = resultadoCanc;
+
+            return result;
         }
         public int mostrarSituacao() {
             return situacao;
         }
-        public override string ToString()
-        {
-            return $"Nome = {estagiario} \nEmpresa = {empresa} \nData de Início = {dataInicio} \nTempo de Estágio = {tempoEstagio()}";
+        public override string ToString() {
+            return $"Nome = {estagiario} \nEmpresa = {empresa} \nData de Início = {dataInicio} \nData final = {(dataCancelamento.Subtract(dataInicio) == tempoEstagio() ? dataCancelamento : dataFim)} \nTempo de Estágio = {tempoEstagio().Days} dias";
         }
     }
     enum SituacaoEstagio : int {
-         cadastrado = 1, iniciado = 2, cancelado = 3, finalizado = 4
+        cadastrado = 1, iniciado = 2, cancelado = 3, finalizado = 4
     }
     
 }
