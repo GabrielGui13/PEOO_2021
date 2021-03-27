@@ -35,7 +35,6 @@ namespace Q1
                 if (i != max - 1) itensArray += itens[i] + ", ";
                 else itensArray += itens[i] + ".";
             }
-
             return this.itensArray;
         }
         public int numItens() {
