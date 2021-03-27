@@ -16,6 +16,7 @@ namespace Q2
         private string mostrarSorteados = "[";
         public Bingo (int numBolas) {
             this.numBolas = numBolas;
+            numerosSorteados = new int[numBolas];
         }
         public int proximo() {
             Random x = new Random();
@@ -33,11 +34,13 @@ namespace Q2
         public int[] sorteados() {
             return this.numerosSorteados;
         } 
-        public void retornarValores() {
+        public string retornarValores() {
             for (int i = 0; i < numerosSorteados.Length; i++) {
                 if (i != numBolas - 1) mostrarSorteados += numerosSorteados[i] + ", ";
                 else mostrarSorteados += numerosSorteados[i].ToString() + "]";
             }
+
+            return 
         }
     }
 }
