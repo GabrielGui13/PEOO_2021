@@ -20,7 +20,7 @@ namespace Q4
             Contato p6 = new Contato("Sim", "(84)99911-0101", new DateTime(2002, 06, 01));
             x.inserir(p6);
 
-            Console.WriteLine(x.retornarContato(2, 8));
+            Console.WriteLine(x.retornarContato(1, 5));
         }
     }
     class Agenda {
