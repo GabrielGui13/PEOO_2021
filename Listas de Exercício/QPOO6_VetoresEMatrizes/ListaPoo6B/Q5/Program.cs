@@ -15,11 +15,12 @@ namespace Q5
             x.inserir(c3);
             Cliente c4 = new Cliente("Bruce", "100.819.644-99", 900);
             x.inserir(c4);
+
             c1.setSocio(c2);
-            Console.WriteLine(c3);
-            //Console.WriteLine(c1);
-            //Console.WriteLine(c4);
-            
+            c3.setSocio(c4);
+
+            c1.setSocio(c3);
+            Console.WriteLine(c2);
         }
     }
     class Empresa {
@@ -39,51 +40,57 @@ namespace Q5
     }
     class Cliente {
         private string nome, cpf;
-        private Cliente[] listaClientes;
-        private decimal limite;
+        private decimal limite, limiteInicial;
         private Cliente socio;
         public Cliente(string nome, string cpf, decimal limite) {
             this.nome = nome;
             this.cpf = cpf;
+            this.limiteInicial = limite;
             this.limite = limite;
         }
-        public void definirSociedade(Cliente c) {
-            this.socio = c;
+        public void acabarSociedade() {
+            this.socio = null;
+            this.limite = limiteInicial;
         }
         public void setSocio(Cliente c) {
-            if (socio == null && c.getSocio() == null) {
-                Empresa x = new Empresa();
-                this.listaClientes = x.listar();
+            decimal limiteSociedade = c.getLimiteInicial() + this.getLimiteInicial();
 
-                setLimite(c.getLimite());
-                c.setLimite(limite - c.getLimite()); //definiu os limites
-
-                if (getLimite() == c.getLimite()) definirSociedade(c);
+            if (c.getSocio() == null && this.getSocio() == null) {
+                this.socio = c;
+                c.socio = this;
+                this.setLimite(limiteSociedade);
+                c.setLimite(limiteSociedade);
             }
+           else {
+                if (c.socio != null) c.socio.acabarSociedade(); //acaba a sociedade do socio do cliente (caso tenha)
+                socio.acabarSociedade(); //acaba a sociedade do meu ex socio
+                acabarSociedade(); //acaba a minha sociedade
+                c.acabarSociedade(); //acaba a sociedade do cliente
 
-            for (int i = 0; i < listaClientes.Length; i++) {
-                if(listaClientes[i].getCPF() == getCPF()) {
-                    c.definirSociedade(listaClientes[i]);
-                }
+                //todos estão padrão
+                this.socio = c;
+                c.socio = this;
+                this.setLimite(limiteSociedade);
+                c.setLimite(limiteSociedade);
             }
         }
         public void setLimite(decimal limite) {
-            this.limite += limite;
+            this.limite = limite;
         }
         public decimal getLimite() {
             return limite;
         }
+        public decimal getLimiteInicial() {
+            return limiteInicial;
+        }
         public string getNome() {
             return nome;
         }
-        private string getCPF() {
-            return cpf;
-        }
-        private Cliente getSocio() {
+        public Cliente getSocio() {
             return socio;
         }
         public override string ToString() {
-            return $"Nome = {nome} \nCPF = {cpf} \nLimite = {limite} \nSocio = {(socio.getNome() == null ? "" : socio.getNome())}";
+            return $"Nome = {nome} \nCPF = {cpf} \nLimite = {limite} \nSocio = {(getSocio() == null ? "Não tem sócio" : socio.getNome())}";
         }
     }
 }
