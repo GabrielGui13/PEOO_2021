@@ -60,7 +60,7 @@ namespace Q5
             else if(pais1.ouro == pais2.ouro && pais1.prata == pais2.prata && pais1.bronze != pais2.bronze)
                 return -pais1.bronze.CompareTo(pais2.bronze);
             else return pais1.nome.CompareTo(pais2.nome);
-        } 
+        }
         public override string ToString() {
             return $"Pais = {nome}";
         }
