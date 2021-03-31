@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\Q5.exe
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\Q5.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\Q5.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\Q5.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\Q5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\ref\Q5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\bin\Debug\net5.0\Q5.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\ref\Q5.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Avaliação 30.03\Q5\obj\Debug\net5.0\Q5.genruntimeconfig.cache

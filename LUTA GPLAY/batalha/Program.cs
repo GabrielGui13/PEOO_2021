@@ -11,7 +11,7 @@ namespace batalha
             x.armazenarLutador(champ1);
             Lutador champ2 = new Lutador("Edson", 113, 16, 4, 1);
             x.armazenarLutador(champ2);
-            Lutador champ3 = new Lutador("Yan", 88, 17, 3 ,2);
+            Lutador champ3 = new Lutador("Lucas", 76, 17, 3 ,2);
             x.armazenarLutador(champ3);
             Lutador champ4 = new Lutador("Fonti", 60, 17, 0, 5);
             x.armazenarLutador(champ4);

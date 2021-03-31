@@ -14,7 +14,7 @@ namespace Q4
             gplays.Inserir(x2);
             gplays.Inserir(x3);
             gplays.Excluir(x2);
-            Console.WriteLine(gplays.retornarAplicativo(2, "confuso"));
+            Console.WriteLine(gplays.retornarAplicativo(2, "fit"));
         }
     }
     class Aplicativo {
@@ -82,7 +82,7 @@ namespace Q4
 
             for (int i = 0; i < apps.Length; i++) {
                 if(apps[i].Categoria.ToLower() == cat.ToLower()) {
-                    pesquisa[i] = apps[i];
+                    pesquisa[aux] = apps[i];
                     aux++;
                 }
             }
