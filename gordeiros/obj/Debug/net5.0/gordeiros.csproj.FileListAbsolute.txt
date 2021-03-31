@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\gordeiros.exe
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\gordeiros.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\gordeiros.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\gordeiros.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\gordeiros.dll
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\ref\gordeiros.dll
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\bin\Debug\net5.0\gordeiros.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.dll
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\ref\gordeiros.dll
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\gordeiros\obj\Debug\net5.0\gordeiros.genruntimeconfig.cache
