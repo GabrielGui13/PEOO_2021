@@ -12,12 +12,13 @@ namespace Q1
     class DisciplinaAnual : IDisciplina {
         private string nome;
         private int nota1, nota2, nota3, nota4, notaFinal;
-        public DisciplinaAnual(string n, int n1, int n2, int n3, int n4) {
+        public DisciplinaAnual(string n, int n1, int n2, int n3, int n4, int nf) {
             this.nome = n;
             this.nota1 = n1;
             this.nota2 = n2;
             this.nota3 = n3;
             this.nota4 = n4;
+            this.notaFinal = nf;
         }
         public string getNome() {
             return nome;
@@ -34,10 +35,11 @@ namespace Q1
     class DisciplinaSemestral : IDisciplina {
         private string nome;
         private int nota1, nota2, notaFinal;
-        public DisciplinaAnual(string n, int n1, int n2) {
+        public DisciplinaAnual(string n, int n1, int n2, int nf) {
             this.nome = n;
             this.nota1 = n1;
             this.nota2 = n2;
+            this.notaFinal = nf;
         }
         public string getNome() {
             return nome;
