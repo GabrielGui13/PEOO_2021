@@ -109,21 +109,28 @@ namespace Caminhão_de_Frete
             CalcTotal();
         }
         public void CalcTotal() {
-            double PorcentagemCarga;
+            double PorcentagemCarga = 0;
             if (caminhao.getCargaAtual() <= 0) PorcentagemCarga = 0;
             else if (caminhao.getCargaAtual() <= caminhao.getCargaMax() / 3 && caminhao.getCargaAtual() > 0) PorcentagemCarga = 1;
             else if (caminhao.getCargaAtual() > caminhao.getCargaMax() / 3 && caminhao.getCargaAtual() <= (caminhao.getCargaMax() / 3) * 2) PorcentagemCarga = 1.25;
-            else if (caminhao.getCargaAtual() > (caminhao.getCargaMax() / 3) * 2 && caminhao.getCargaAtual() > caminhao.getCargaMax()) PorcentagemCarga = 1.5;
-            else PorcentagemCarga = -1;
+            else if (caminhao.getCargaAtual() > (caminhao.getCargaMax() / 3) * 2 && caminhao.getCargaAtual() < caminhao.getCargaMax()) PorcentagemCarga = 1.5;
+            else if (caminhao.getCargaAtual() > caminhao.getCargaMax()) PorcentagemCarga = -1;
 
-            if (PorcentagemCarga == 0) situacaoViagem = "Sem carga";
-            else if (PorcentagemCarga == -1) situacaoViagem = "Carga Excedida";
-            else situacaoViagem = "Carga autorizada";
-
-            valorTotal = distancia * valor * PorcentagemCarga;
+            if (PorcentagemCarga == 0) {
+                situacaoViagem = "Sem carga";
+                valorTotal = 0;
+            }
+            else if (PorcentagemCarga == -1) {
+                situacaoViagem = "Carga Excedida";
+                valorTotal = 0;
+            }
+            else {
+                situacaoViagem = "Carga autorizada";
+                valorTotal = distancia * valor * PorcentagemCarga;
+            }
         }
         public string Info() {
-            return $"Inicio = {inicio} \nDestino = {destino} \nDistancia = {distancia}km \nValor Parcial = R${valor}/km \nValor Total = R${valorTotal:.00} \nCarga = {caminhao.getCargaAtual()}kg \nItens = {caminhao.getTotalItens()} itens";
+            return $"Inicio = {inicio} \nDestino = {destino} \nDistancia = {distancia}km \nValor Parcial = R${valor}/km \nValor Total = R${(valorTotal != 0 ? $"{valorTotal:.00}" : 0)} \nCarga = {caminhao.getCargaAtual()}kg \nItens = {caminhao.getTotalItens()} itens \nSituação = {situacaoViagem}";
         }
         public override string ToString()
         {
