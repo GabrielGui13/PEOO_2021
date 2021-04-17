@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\Caminhão de Frete.exe
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\Caminhão de Frete.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\Caminhão de Frete.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\Caminhão de Frete.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\Caminhão de Frete.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\ref\Caminhão de Frete.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\bin\Debug\net5.0\Caminhão de Frete.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\ref\Caminhão de Frete.dll
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\Listas de Exercício\QPOO11_Coleções\Caminhão de Frete\obj\Debug\net5.0\Caminhão de Frete.genruntimeconfig.cache
