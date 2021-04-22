@@ -6,27 +6,22 @@ namespace gordeiros
     {
         static void Main(string[] args)
         {
-            for (int y = 1; y > 0; y++) {
-                Console.WriteLine("Informe um numero");
-                int num = int.Parse(Console.ReadLine());
+            int numero, c1 = 0, c2 = 0, c3 = 0, c4 = 0;
 
-                Console.WriteLine("Informe a operacao (A, a, S, s, D, d, M, m)");
-                string operacao = Console.ReadLine();
+            do {
+                numero = int.Parse(Console.ReadLine());
 
-                for (int i = 1; i <= 10; i++) {
-                    if (operacao == "A" || operacao == "a") Console.WriteLine(num + i);
-                    else if (operacao == "S" || operacao == "s") Console.WriteLine(num - i);
-                    else if (operacao == "M" || operacao == "m") Console.WriteLine(num * i);
-                    else if (operacao == "D" || operacao == "d") Console.WriteLine(num / i);
-                    else {
-                        Console.WriteLine("Ocorreu um erro");
-                        i = 11;
-                    }
-                }
-                Console.WriteLine("Deseja repetir a operacao? (S - N)");
-                string seletor = Console.ReadLine();
-                if (seletor == "N" || seletor == "n") y = -1;
-            }
+                if (numero >= 0 && numero <= 25) c1++;
+                else if (numero > 26 && numero <= 50) c2++;
+                else if (numero > 51 && numero <= 75) c3++;
+                else if (numero > 76 && numero <= 100) c4++;
+
+            } while (numero > -1);
+
+            Console.WriteLine("Numeros entre 0 e 25 = " + c1);
+            Console.WriteLine("Numeros entre 26 e 50 = " + c2);
+            Console.WriteLine("Numeros entre 51 e 75 = " + c3);
+            Console.WriteLine("Numeros entre 76 e 100 = " + c4);
         }
     }
 }
