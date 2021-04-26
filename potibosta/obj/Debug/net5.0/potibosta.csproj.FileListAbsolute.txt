@@ -1,0 +1,16 @@
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\potibosta.exe
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\potibosta.deps.json
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\potibosta.runtimeconfig.json
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\potibosta.runtimeconfig.dev.json
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\potibosta.dll
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\ref\potibosta.dll
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\bin\Debug\net5.0\potibosta.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.AssemblyInfo.cs
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.dll
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\ref\potibosta.dll
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.pdb
+C:\Users\gabri\Documents\github\PEOO_2021\potibosta\obj\Debug\net5.0\potibosta.genruntimeconfig.cache
