@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO13_Exceções\\Q1\\Q1.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO13_Exceções\\Q1\\Q1.csproj",
       "projectName": "Q1",
-      "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO13_Exceções\\Q1\\Q1.csproj",
+      "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO13_Exceções\\Q1\\Q1.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO13_Exceções\\Q1\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO13_Exceções\\Q1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
