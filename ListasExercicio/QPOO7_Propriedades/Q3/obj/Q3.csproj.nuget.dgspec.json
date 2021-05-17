@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO7_Propriedades\\Q3\\Q3.csproj": {}
+    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO7_Propriedades\\Q3\\Q3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO7_Propriedades\\Q3\\Q3.csproj": {
+    "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO7_Propriedades\\Q3\\Q3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO7_Propriedades\\Q3\\Q3.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO7_Propriedades\\Q3\\Q3.csproj",
         "projectName": "Q3",
-        "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO7_Propriedades\\Q3\\Q3.csproj",
+        "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO7_Propriedades\\Q3\\Q3.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\Listas de Exercício\\QPOO7_Propriedades\\Q3\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\ListasExercicio\\QPOO7_Propriedades\\Q3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
