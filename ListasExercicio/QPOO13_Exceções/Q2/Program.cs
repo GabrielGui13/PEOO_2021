@@ -17,7 +17,7 @@ namespace Q2
                 a.Inserir(c2);
                 a.Inserir(c3);
 
-                foreach (Compromisso c in a.Pesquisar(12, 2021)) {
+                foreach (Compromisso c in a.Pesquisar(12, 2021 )) {
                     Console.WriteLine(c);
                     Console.WriteLine("\n");
                 }

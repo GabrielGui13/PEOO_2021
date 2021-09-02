@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\LUTA GPLAY\\batalha2\\batalha2.csproj",
-      "projectName": "batalha2",
-      "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\LUTA GPLAY\\batalha2\\batalha2.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\q11-apoo\\q11-apoo.csproj",
+      "projectName": "q11-apoo",
+      "projectPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\q11-apoo\\q11-apoo.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\LUTA GPLAY\\batalha2\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\Documents\\github\\PEOO_2021\\q11-apoo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

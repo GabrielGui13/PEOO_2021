@@ -6,20 +6,20 @@ namespace batalha
     {
         public static void Main(string[] args)
         {   
-            Metodos x = new Metodos();
-            Lutador champ1 = new Lutador("Rafael", 104, 17, 5, 0);
+            Ringue x = new Ringue();
+            Lutador champ1 = new Lutador("Rafael", 109, 18, 0, 0);
             x.armazenarLutador(champ1);
-            Lutador champ2 = new Lutador("Edson", 113, 16, 4, 1);
+            Lutador champ2 = new Lutador("Edson", 77, 17, 0, 0);
             x.armazenarLutador(champ2);
-            Lutador champ3 = new Lutador("Lucas", 76, 17, 3 ,2);
+            Lutador champ3 = new Lutador("Bruce", 60, 18, 0 ,0);
             x.armazenarLutador(champ3);
-            Lutador champ4 = new Lutador("Fonti", 60, 17, 0, 5);
+            Lutador champ4 = new Lutador("Fonti", 60, 17, 0, 0);
             x.armazenarLutador(champ4);
             x.definirBatalha();
             x.lutar();
         }
     }
-    class Metodos {
+    class Ringue {
         public Lutador[] lutadores = new Lutador[4];
         private int aux = 0;
         private Lutador desafiante;
