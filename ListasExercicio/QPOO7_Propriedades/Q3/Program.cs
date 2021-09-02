@@ -6,10 +6,11 @@ namespace Q3
     {
         static void Main(string[] args)
         {
-            Paciente x = new Paciente{Nome = "Gabriel", CPF = "097.819.644-99", Telefone = "(84)99911-0101", Nascimento = new DateTime(2002, 08, 13)};
+            Paciente Gabriel = new Paciente{Nome = "Gabriel", CPF = "097.819.644-99", Telefone = "(84)99911-0101", Nascimento = new DateTime(2002, 08, 13)};
             Paciente y = new Paciente{Nome = "Guilherme", CPF = "097.819.644-99", Telefone = "(84)99911-0101", Nascimento = new DateTime(2005, 12, 13)};
-            Console.WriteLine(x);
+            Console.WriteLine(Gabriel);
             Console.WriteLine(y);
+            Console.WriteLine(y.Nome.Length);
         }
     }
     class Paciente {
@@ -25,7 +26,7 @@ namespace Q3
         }
         public string Telefone {
             get {return telefone;}
-            set {telefone = value;}
+            set {if (value.Length > 0) telefone = value;}
         }
         public DateTime Nascimento {
             get {return nascimento;}
